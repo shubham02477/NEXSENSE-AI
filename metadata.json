@@ -1,0 +1,6 @@
+{
+  "name": "NEXSENSE AI",
+  "description": "Intelligence Beyond Vision. Privacy-first human presence and motion detection platform powered by WiFi Channel State Information (CSI).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
