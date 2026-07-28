@@ -4,6 +4,7 @@ import { Footer } from './components/common/Footer';
 import { MouseGlow } from './components/common/MouseGlow';
 import { SearchModal } from './components/common/SearchModal';
 import { GetStartedModal } from './components/common/GetStartedModal';
+import { LiveNotifications } from './components/common/LiveNotifications';
 
 import { Hero } from './components/sections/Hero';
 import { TrustedBy } from './components/sections/TrustedBy';
@@ -83,6 +84,10 @@ export default function App() {
     <div className="min-h-screen bg-[#0B1120] text-[#CBD5E1] font-sans relative selection:bg-blue-500/30 selection:text-white antialiased">
       {/* Ambient Mouse Lighting Effect */}
       <MouseGlow />
+
+      {/* Live backend connection: shows a real-time toast whenever the
+          backend detects a person (see app/esp32/routes.py -> /ws/live) */}
+      <LiveNotifications />
 
       {/* Navigation Header */}
       <Navbar
